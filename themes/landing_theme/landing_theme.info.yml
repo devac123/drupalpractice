@@ -1,0 +1,11 @@
+name: landing_theme
+type: theme
+description: 'Basic structure for landing page.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+
+libraries:
+  - landing_theme/global-css-and-js
+  - landing_theme/fonts 

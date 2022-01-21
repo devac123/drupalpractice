@@ -1,0 +1,16 @@
+form_module.addUser:
+  path: '/register-user'
+  defaults:
+    _title: 'Registration form'
+    _form: '\Drupal\form_module\Form\ADD_USER'
+  requirements:
+     _permission: 'access content'
+
+# second  module
+form_module.RegisterUser:
+  path: '/add-user'
+  defaults:
+    _title: 'Registration form'
+    _form: '\Drupal\form_module\Form\Register_User'
+  requirements:
+     _permission: 'access content'    
