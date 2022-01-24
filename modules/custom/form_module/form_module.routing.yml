@@ -6,7 +6,7 @@ form_module.addUser:
   requirements:
      _permission: 'access content'
 
-# second  module
+# Register  module
 form_module.RegisterUser:
   path: '/add-user'
   defaults:
@@ -14,3 +14,13 @@ form_module.RegisterUser:
     _form: '\Drupal\form_module\Form\Register_User'
   requirements:
      _permission: 'access content'    
+
+
+ # User_Detail  module
+form_module.Detail:
+  path: '/user-detail'
+  defaults:
+    _title: 'Userdetail'
+    _controller: '\Drupal\form_module\User\DetailController::Detail'
+  requirements:
+     _permission: 'access content'        
